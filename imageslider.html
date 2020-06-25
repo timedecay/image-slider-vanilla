@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>image-slider</title>
+    <link rel="icon" href="./icon/picture.svg">
+    <link rel="stylesheet" href="./imageslider.css"> </link>
+  </head>
+  <body>
+    <div class="slide-image-container">
+      <div class="slide-image-all" data-images="5" data-active="0">
+        <img
+          class="class-slide-image img-active"
+          id="slide-image-0"
+          src="./image/image01.jpg"
+          alt="#"
+        />
+        <img
+          class="class-slide-image"
+          id="slide-image-1"
+          src="./image/image02.jpg"
+          alt="#"
+        />
+        <img
+          class="class-slide-image"
+          id="slide-image-2"
+          src="./image/image03.jpg"
+          alt="#"
+        />
+        <img
+          class="class-slide-image"
+          id="slide-image-3"
+          src="./image/image04.jpg"
+          alt="#"
+        />
+        <img
+          class="class-slide-image"
+          id="slide-image-4"
+          src="./image/image05.jpg"
+          alt="#"
+        />
+      </div>
+
+      <div class="slide-control-container">
+        <li><img  class="class-slide-control " data-offset="-1" src="./icon/left.svg" alt="control-left"
+          /></li>
+        <li><img  class="class-slide-control " data-offset="1" src="./icon/right.svg" alt="control-right"
+          /></li>
+      </div>
+
+      <div class="slide-image-slider">
+        <a
+          href="#"
+          class="class-slide-dot dot-active"
+          id="slide-image-dot0"
+          data-index="0"
+        ></a>
+        <a
+          href="#"
+          class="class-slide-dot"
+          id="slide-image-dot1"
+          data-index="1"
+        ></a>
+        <a
+          href="#"
+          class="class-slide-dot"
+          id="slide-image-dot2"
+          data-index="2"
+        ></a>
+        <a
+          href="#"
+          class="class-slide-dot"
+          id="slide-image-dot3"
+          data-index="3"
+        ></a>
+        <a
+          href="#"
+          class="class-slide-dot"
+          id="slide-image-dot4"
+          data-index="4"
+        ></a>
+      </div>
+    </div>
+    <script src="imageslider.js"></script>
+  </body>
+</html>

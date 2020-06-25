@@ -1,0 +1,96 @@
+html {
+  font-size: 62.5%;
+}
+.slide-image-container {
+  width: 80%;
+  margin: 2rem;
+  position: relative;
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+
+.slide-image-all img {
+  height: 100%;
+  width: 100%;
+}
+
+.class-slide-image {
+  display: none;
+}
+
+.img-active {
+  display: inline-block;
+
+  animation-name: imageSwitch;
+  animation-duration: 400ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+/* <- slide-indicator ->*/
+.slide-image-slider {
+  bottom: 2%;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+}
+
+.class-slide-dot {
+  display: inline-block;
+  margin: 0rem 0.2rem;
+  height: 0.8rem;
+  width: 3.8rem;
+  opacity: 0.9;
+  background: rgb(80, 80, 80);
+  border-radius: 10rem;
+  text-decoration: none;
+  z-index: 1;
+}
+
+.dot-active {
+  box-shadow: 5px 5px 10px;
+  background: white;
+  color: rgb(15, 15, 15);
+  z-index: 2;
+}
+
+/* <--- slide-control --->*/
+.slide-control-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 0rem;
+  width: 100%;
+  top: 50%;
+
+  transform: translateY(-50%);
+}
+
+.slide-control-container img {
+  height: 7.5rem;
+  width: 4.8rem;
+  cursor: pointer;
+}
+
+.slide-control-container li {
+  list-style: none;
+}
+
+.slide-control-container li :hover {
+  height: 7.5rem;
+  width: 4.8rem;
+  background-color: rgb(65, 65, 65);
+  opacity: 0.85;
+}
+
+/* <---- 图片切换动画 --->*/
+@keyframes imageSwitch {
+  0% {
+    filter: brightness(60%);
+  }
+
+  100% {
+    filter: brightness(100%);
+  }
+}
